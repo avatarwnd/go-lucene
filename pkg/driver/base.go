@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/grindlemire/go-lucene/pkg/lucene/expr"
+	"github.com/avatarwnd/go-lucene/pkg/lucene/expr"
 )
 
 // Shared is the shared set of render functions that can be used as a base and overriden

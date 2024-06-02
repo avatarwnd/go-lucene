@@ -6,7 +6,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/grindlemire/go-lucene/pkg/lucene/expr"
+	"github.com/avatarwnd/go-lucene/pkg/lucene/expr"
 )
 
 // RenderFN is a rendering function. It takes the left and right side of the operator serialized to a string

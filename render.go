@@ -1,6 +1,6 @@
 package lucene
 
-import "github.com/grindlemire/go-lucene/pkg/driver"
+import "github.com/avatarwnd/go-lucene/pkg/driver"
 
 var (
 	postgres = driver.NewPostgresDriver()

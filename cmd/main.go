@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/grindlemire/go-lucene"
-	"github.com/grindlemire/go-lucene/pkg/driver"
-	"github.com/grindlemire/go-lucene/pkg/lucene/expr"
+	"github.com/avatarwnd/go-lucene"
+	"github.com/avatarwnd/go-lucene/pkg/driver"
+	"github.com/avatarwnd/go-lucene/pkg/lucene/expr"
 )
 
 func main() {

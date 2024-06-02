@@ -23,6 +23,6 @@ jobs:
             - name: fuzz test
               run: go test -v ./fuzz
 
-            - uses: grindlemire/bump-release-action@master
+            - uses: avatarwnd/bump-release-action@master
               with:
                   config_path: '.github/bump.yml'

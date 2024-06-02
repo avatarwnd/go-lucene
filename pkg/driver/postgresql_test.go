@@ -3,7 +3,7 @@ package driver
 import (
 	"testing"
 
-	"github.com/grindlemire/go-lucene/pkg/lucene/expr"
+	"github.com/avatarwnd/go-lucene/pkg/lucene/expr"
 )
 
 const errTemplate = "%s:\n    wanted %s\n    got    %s"

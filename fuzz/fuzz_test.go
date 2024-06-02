@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/grindlemire/go-lucene"
-	"github.com/grindlemire/go-lucene/pkg/driver"
+	"github.com/avatarwnd/go-lucene"
+	"github.com/avatarwnd/go-lucene/pkg/driver"
 	pg_query "github.com/pganalyze/pg_query_go/v4"
 )
 

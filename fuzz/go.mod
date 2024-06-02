@@ -1,9 +1,9 @@
-module github.com/grindlemire/go-lucene/fuzz
+module github.com/avatarwnd/go-lucene/fuzz
 
 go 1.22
 
 require (
-	github.com/grindlemire/go-lucene v0.0.14
+	github.com/avatarwnd/go-lucene v0.0.14
 	github.com/pganalyze/pg_query_go/v4 v4.2.3
 )
 
@@ -13,4 +13,4 @@ require (
 )
 
 // Always just use the local version of go-lucene
-replace github.com/grindlemire/go-lucene => ../
+replace github.com/avatarwnd/go-lucene => ../

@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/grindlemire/go-lucene/internal/lex"
-	"github.com/grindlemire/go-lucene/pkg/lucene/expr"
-	"github.com/grindlemire/go-lucene/pkg/lucene/reduce"
+	"github.com/avatarwnd/go-lucene/internal/lex"
+	"github.com/avatarwnd/go-lucene/pkg/lucene/expr"
+	"github.com/avatarwnd/go-lucene/pkg/lucene/reduce"
 )
 
 // Parse will parse a lucene expression string using a buffer and the shift reduce algorithm. The returned expression

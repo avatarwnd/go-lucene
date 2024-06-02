@@ -1,6 +1,6 @@
 package driver
 
-import "github.com/grindlemire/go-lucene/pkg/lucene/expr"
+import "github.com/avatarwnd/go-lucene/pkg/lucene/expr"
 
 // PostgresDriver transforms a parsed lucene expression to a postgres sql filter.
 type PostgresDriver struct {

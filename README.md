@@ -30,14 +30,14 @@ SELECT *
 FROM apples
 WHERE
     (
-		("color" = 'red') AND 
+		("color" = 'red') AND
 		(
 			NOT(
-				("type" = 'honey crisp') OR 
+				("type" = 'honey crisp') OR
 				("type" = 'granny smith')
 			)
 		)
-	) AND 
+	) AND
 	("age_in_months" >= 5)
 LIMIT 10;
 `
@@ -49,9 +49,9 @@ Just embed the `Base` driver in your custom driver and override the `RenderFN`'s
 
 ```Go
 import (
-	"github.com/grindlemire/go-lucene"
-	"github.com/grindlemire/go-lucene/pkg/driver"
-	"github.com/grindlemire/go-lucene/pkg/lucene/expr"
+	"github.com/avatarwnd/go-lucene"
+	"github.com/avatarwnd/go-lucene/pkg/driver"
+	"github.com/avatarwnd/go-lucene/pkg/lucene/expr"
 )
 
 type MyDriver struct {
@@ -95,7 +95,7 @@ func main() {
 	// render an expression
 	expr, _ := lucene.Parse(`color:red AND NOT (type:"honey crisp" OR type:"granny smith") AND age_in_months:[5 TO *]`)
 	filter, _ := driver.Render(expr)
-	
+
 	SQLTemplate := `
 	SELECT *
 	FROM apples
@@ -111,14 +111,14 @@ func main() {
 	FROM apples
 	WHERE
 		(
-			("color" == 'red') AND 
+			("color" == 'red') AND
 			(
 				NOT(
-					("type" == 'honey crisp') OR 
+					("type" == 'honey crisp') OR
 					("type" == 'granny smith')
 				)
 			)
-		) AND 
+		) AND
 		("age_in_months" >= 5)
 	LIMIT 10;
 	`

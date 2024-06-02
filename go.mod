@@ -1,3 +1,3 @@
-module github.com/grindlemire/go-lucene
+module github.com/avatarwnd/go-lucene
 
 go 1.22
